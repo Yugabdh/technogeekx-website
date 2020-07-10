@@ -1,0 +1,103 @@
+
+.footer-section {
+  background: #242930;
+}
+
+.footer-social-band {
+  background-color: #6351ce; 
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+}
+
+.footer-logo-item {
+  margin-bottom: 30px;
+}
+
+.footer-logo-item .f-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo-item .f-logo a {
+  display: inline-block;
+}
+.brand-name {
+  color: $white;
+  font-weight: bold;
+  font-size: 1.8rem;
+
+}
+.footer-logo-item p {
+  color: #afb4bf;
+  margin-bottom: 32px;
+}
+
+.footer-widget h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .footer-widget h5 {
+    padding-top: 2rem;
+    font-size: 30px;
+  }
+}
+.footer-widget .footer-blog .fb-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-widget .footer-blog .fb-item:hover h6 {
+  color: $highlightedText;
+}
+
+.footer-widget .footer-blog .fb-item h6 {
+  color: $white;
+  font-weight: 300;
+  margin-bottom: 12px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-widget .footer-blog .fb-item span {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  color: #afb4bf;
+}
+
+.footer-widget .footer-blog .fb-item span i {
+  color: $highlightedText;
+  margin-right: 5px;
+}
+
+.footer-widget .other-links li {
+  list-style: none;
+}
+
+.footer-widget .other-links li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  color: #afb4bf;
+  line-height: 18px;
+  margin-bottom: 22px;
+}
+
+.footer-widget .other-links li a:hover {
+  color: $highlightedText;
+}
+
+.footer-widget.footer-info .info-p {
+  font-size: 16px;
+  color: #afb4bf;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}

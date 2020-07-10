@@ -1,0 +1,38 @@
+/* navbar starts */
+.top-nav-collapse {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  background-color: $nav !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  background-color: $nav !important;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: $highlightedText !important;
+}
+
+.nav-link.active{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-item.active .nav-link {
+  color: $highlightedText !important;
+}
+
+.navbar .nav-item:hover, 
+.navbar .nav-item.active {
+  color: $highlightedText !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: $nav !important;
+  }
+  .navbar-collapse {
+    margin-top: 5px;
+  }
+}

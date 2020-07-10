@@ -1,0 +1,47 @@
+.about-page {
+  .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .about-us {
+    h4 {
+      color: #ffffff;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #ffffff;
+      line-height: 26px;
+    }
+  }
+  .about-quality {
+    h4 {
+      color: #ffffff;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #ffffff;
+      line-height: 22px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 2rem;
+      li {
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        span {
+          color: $highlightedText;
+        }
+      }
+    }
+  } 
+}
+@media (max-width: 740px) {
+  .about-quality {
+    margin-top: 2rem;
+  }
+}

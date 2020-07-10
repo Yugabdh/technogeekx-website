@@ -1,0 +1,13 @@
+.iconHeadingText h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 740px) {
+  .iconHeadingText h2 {
+    font-size: 38px;
+  }
+}

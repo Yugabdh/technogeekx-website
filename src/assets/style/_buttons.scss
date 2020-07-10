@@ -1,0 +1,13 @@
+.primary-btn {
+	color: $white !important;
+	margin: 0;
+	background: rgb(0,227,142);
+	background: -moz-linear-gradient(90deg, rgba(0,227,142,1) 0%, rgba(87,203,204,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(0,227,142,1) 0%, rgba(87,203,204,1) 100%);
+	background: linear-gradient(90deg, rgba(0,227,142,1) 0%, rgba(87,203,204,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e38e",endColorstr="#57cbcc",GradientType=1);
+	display: inline-block;
+  &:hover {
+    font-weight: 500;
+  }  
+}

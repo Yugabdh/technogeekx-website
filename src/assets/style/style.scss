@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Montserrat:wght@300;500;700&family=Nunito+Sans:wght@400;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+// font-family: 'Baloo Paaji 2', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+@import "./color";
+@import "./default";
+@import "./navbar";
+@import "./footer";
+@import "./buttons";
+
+.banner-hero {
+  background-image: linear-gradient(to bottom, rgba(31,29,29,1), rgba(74,78,84,0.1)),
+  url('../img/banner/banner-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.banner-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+@media (max-width: 990px) {
+  .banner-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+}
+
+@import "./infosideimg";
+@import "./iconheading";
+@import "./aboutpage";
+@import "./newslettersub";
+@import "./contact";
+@import "./blogpage";

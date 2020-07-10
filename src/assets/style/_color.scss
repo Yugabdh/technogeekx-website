@@ -1,0 +1,39 @@
+$primaryBg: #242930;
+$secondaryBg: #353B43;
+$lintedText: #77FF33;
+$highlightedText: #57CBCC;
+$secondaryText: #AFB4BF;
+$white: #ffffff;
+$nav: #1d2024;
+
+.text-green {
+  color: #77ff33;
+}
+
+.text-blue {
+  color: #57cbcc;
+}
+
+.text-grey {
+  color: #afb4bf;
+}
+
+.backgroud-dark-0 {
+  background-color: $nav;
+}
+
+.backgroud-dark-1 {
+  background-color: #242930;
+}
+
+.backgroud-dark-2 {
+  background-color: #353b43;
+}
+
+.bg1-bg2-gradient {
+  background: rgb(36,41,48);
+  background: -moz-linear-gradient(131deg, rgba(36,41,48,1) 0%, rgba(53,59,67,1) 100%);
+  background: -webkit-linear-gradient(131deg, rgba(36,41,48,1) 0%, rgba(53,59,67,1) 100%);
+  background: linear-gradient(131deg, rgba(36,41,48,1) 0%, rgba(53,59,67,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242930",endColorstr="#353b43",GradientType=1);
+}
