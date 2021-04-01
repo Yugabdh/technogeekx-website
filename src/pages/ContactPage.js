@@ -51,9 +51,6 @@ export default class ContactPage extends Component {
   
   handleSubmit(e) {
 		e.preventDefault();
-		// console.log(this.state.email)
-		// console.log(this.state.name)
-		// console.log(this.state.response)
     if(this.state.email !== "" && this.state.name !== "" && this.state.response !== ""){
       const responses = firebase.firestore().collection('responses');
       const message = {
@@ -83,12 +80,11 @@ export default class ContactPage extends Component {
       <section className="contact-section spad backgroud-dark-1">
         <div className="container">
 					<div className="row">
-						<div className="col-lg-3">
+						<div className="col-lg-4">
 							<div className="contact-info">
 								<h4>Information</h4>
 								<ul>
-									<li><i className="fa fa-phone"></i>(91)-123-123-1231</li>
-									<li><i className="fa fa-envelope"></i>xxx@mail.com</li>
+									<li><i className="fa fa-envelope"></i>technogeekx.contact@gmail.com</li>
 								</ul>
 							</div>
 							<div className="contact-address">
@@ -99,7 +95,7 @@ export default class ContactPage extends Component {
 								</ul>
 							</div>
 						</div>
-							<div className="col-lg-8 offset-lg-1">
+							<div className="col-lg-7">
 								<div className="contact-form">
 									<h4>Get in touch</h4>
 									<form onSubmit={this.handleSubmit}>
@@ -119,7 +115,7 @@ export default class ContactPage extends Component {
 												</textarea>
 												<Reaptcha
 													ref={e => (this.captcha = e)}
-													sitekey="6Le-Ka8ZAAAAAK_6GQ7pSZ7UmgduGUYeLwiElGhV"
+													sitekey="6LcA488ZAAAAAI9Q-KoWUvsOKsZlr278-8djSK3b"
 													onVerify={this.onVerify}
 													size="invisible"
 													theme="dark"

@@ -10,27 +10,28 @@ import firebase from "../firebase/Firebase-init";
 
 
 export default class BlogPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       currentItem: '',
       email: '',
       modal6: false
     }
+    this.timer_div = React.createRef();
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggle = this.toggle.bind(this);
     this.releaseDate = this.releaseDate.bind(this);
   }
 
-  releaseDate() {
-    var docRef = firebase.firestore().collection("blog").doc("M7A5cORoq3QT5OYdOefV");
+  releaseDate = (div_tag) => {
+    var docRef = firebase.firestore().collection("blog").doc("timer");
+    
     docRef.get().then(function(doc) {
       if (doc.exists) {
         var countDownDate = new Date(doc.data().date.seconds*1000);
-        countDownDate.setDate(countDownDate.getDate() + 20);
-        var timerDiv = document.getElementById("time-counter").innerHTML;
-        if(timerDiv) {
+        countDownDate.setDate(countDownDate.getDate() + 10);
+        if(div_tag.current) {
           var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = countDownDate - now;
@@ -38,17 +39,21 @@ export default class BlogPage extends Component {
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            timerDiv = days + "d " + hours + "h " +
+            if(div_tag.current) {
+              div_tag.current.innerHTML = days + "d " + hours + "h " +
               minutes + "m " + seconds + "s ";
+            }
+            
             if (distance < 0) {
               clearInterval(x);
-              document.getElementById("time-counter").innerHTML = "EXPIRED";
+              if(div_tag.current) {
+                div_tag.current.innerHTML = "EXPIRED";
+              }
             }
           }, 1000);
         }
         
       } else {
-          // doc.data() will be undefined in this case
           console.log("No such document!");
       }
     }).catch(function(error) {
@@ -77,7 +82,6 @@ export default class BlogPage extends Component {
       const user = {
         email: this.state.email
       }
-      console.log(user)
       subscriber.add(user)
       .then((docRef) => {
         this.setState({
@@ -93,7 +97,7 @@ export default class BlogPage extends Component {
     }
   }
   componentDidMount() {
-    this.releaseDate();
+    this.releaseDate(this.timer_div);
   }
   render() {
     return (
@@ -107,7 +111,7 @@ export default class BlogPage extends Component {
             <h1 className="display-4 mb-4 coming">
               <strong>Coming Soon!</strong>
             </h1>
-            <div id="time-counter" ref="timeCounter" className="border border-light my-4"></div>
+            <div id="time-counter" ref={this.timer_div} className="border border-light my-4"></div>
 
             <h4 className="mb-4 coming">
               <strong>We're working hard to finish the development of this component. </strong>

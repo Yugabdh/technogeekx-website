@@ -1,4 +1,6 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+
+import 'firebase/firestore'; // If using Firebase database
 import "firebase/analytics";
 
 const firebaseConfig = {

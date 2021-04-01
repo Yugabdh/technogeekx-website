@@ -13,17 +13,11 @@ const FooterPage = () => {
               </p>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center text-md-right">
-              <a className="fb-ic ml-0" href="#!">
+              <a className="fb-ic ml-0" href="https://www.facebook.com/technogeekx.page">
                 <i className="fab fa-facebook-f white-text mr-4"> </i>
               </a>
-              <a className="tw-ic" href="#!">
+              <a className="tw-ic" href="https://twitter.com/technogeekx/">
                 <i className="fab fa-twitter white-text mr-4"> </i>
-              </a>
-              <a className="li-ic" href="#!">
-                <i className="fab fa-linkedin-in white-text mr-4"> </i>
-              </a>
-              <a className="ins-ic" href="#!">
-                <i className="fab fa-instagram white-text mr-4"> </i>
               </a>
             </MDBCol>
           </MDBRow>
@@ -39,7 +33,7 @@ const FooterPage = () => {
                   <span className="brand-name">TechnoGeekx</span>
                 </a>
             </div>
-            <p>Thegikx is a self-initiated project which is powered by our willpower. 
+            <p>TechnoGeekx is a self-initiated project which is powered by our willpower. 
               By exploring us more you will be one step closer to technology.
             </p>
           </div>
@@ -50,7 +44,7 @@ const FooterPage = () => {
               <div className="footer-blog">
                 <a href="blog.html" className="fb-item">
                     <h6>Comming soon </h6>
-                    <span className="blog-time"><i className="far fa-clock"></i> May 11, 2020</span>
+                    <span className="blog-time"><i className="far fa-clock"></i> Sep 24, 2020</span>
                 </a>
               </div>
             </div>
@@ -71,7 +65,7 @@ const FooterPage = () => {
                 <i className="fas fa-map-marker-alt mr-3" /> Mumbai, IN
               </p>
               <p className="info-p">
-                <i className="fa fa-envelope mr-3" /> info@example.com
+                <i className="fa fa-envelope mr-3" /> technogeekx.contact@gmail.com
               </p>
             </div>
           </MDBCol>

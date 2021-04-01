@@ -81,18 +81,13 @@ export default class NavbarPage extends React.Component {
               </MDBNavbarNav>
               <MDBNavbarNav right className="navbar-nav nav-flex-icons">
                   <MDBNavItem>
-                      <a href="https://www.twitter.com" to="_blank" className="nav-link Ripple-parent">
+                      <a href="https://twitter.com/technogeekx/" to="_blank" className="nav-link Ripple-parent">
                         <MDBIcon fab icon="twitter" />
                       </a>
                   </MDBNavItem>
                   <MDBNavItem>
-                      <a className="nav-link waves-effect waves-light" href="facebook.com">
+                      <a className="nav-link waves-effect waves-light" to="_blank" href="https://www.facebook.com/technogeekx.page">
                           <MDBIcon fab icon="fab fa-facebook-f" />
-                      </a>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                      <a className="nav-link waves-effect waves-light" href="facebook.com">
-                          <MDBIcon fab icon="fab fa-instagram" />
                       </a>
                   </MDBNavItem>
               </MDBNavbarNav>
